@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<swes:InsertSensor xmlns:sos="http://www.opengis.net/sos/2.0"
+    xmlns:swes="http://www.opengis.net/swes/2.0" xmlns:sml="http://www.opengis.net/sensorML/1.0.1"
+    xmlns:swe="http://www.opengis.net/swe/1.0.1" xmlns:gml="http://www.opengis.net/gml"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    service="SOS" version="2.0.0"
+    xsi:schemaLocation="http://www.opengis.net/sos/2.0/ http://schemas.opengis.net/sos/2.0/sosInsertSensor.xsd http://www.opengis.net/swes/2.0 http://schemas.opengis.net/swes/2.0/swes.xsd">
+    <swes:procedureDescriptionFormat>http://www.opengis.net/sensorML/1.0.1</swes:procedureDescriptionFormat>
+    <swes:procedureDescription>
+        <sml:SensorML version="1.0.1"
+            xsi:schemaLocation="http://www.opengis.net/sensorML/1.0.1 http://schemas.opengis.net/sensorML/1.0.1/sensorML.xsd">
+            
+            <sml:member>
+                <sml:System gml:id="SystemVantagePro2">
+                    <gml:description>Vantage Pro2™ (6152, 6153) and Vantage Pro2™ Plus (6162, 6163)
+                        Wireless Weather Stations include two components: the Integrated Sensor
+                        Suite (ISS) which houses and manages the external sensor array, and the
+                        console which provides the user interface, data display, and calculations.
+                        The ISS and Vantage Pro2 console communicate via an FCC‐certified,
+                        license‐free, spread‐spectrum frequency‐hopping (FHSS) transmitter and
+                        receiver. Userselectable transmitter ID codes allow up to eight stations to
+                        coexist in the same geographic area. The frequency hopping spread spectrum
+                        technology provides greater communication strength over longer distances and
+                        areas of weaker reception. The Wireless Vantage Pro2 Plus weather station
+                        includes two additional sensors that are optional on the Vantage Pro2: the
+                        UV sensor and the solar radiation sensor.</gml:description>
+                    <gml:name>PTF - Wireless Vantage Pro2</gml:name>
+
+                    <sml:identification>
+                        <sml:IdentifierList>
+                            <sml:identifier name="uniqueID">
+                                <sml:Term>
+                                    <sml:value>http://sp7.irea.cnr.it/sensors/noSK/procedure/DavisInstruments/VantagePro/noSerialNumberDeclared/20141217115413720_11525</sml:value>
+                                </sml:Term>
+                            </sml:identifier>
+                            <sml:identifier name="Short Name">
+                                <sml:Term definition="urn:ogc:def:identifier:OGC:shortName">
+                                    <sml:value>Davis-VantagePro2</sml:value>
+                                </sml:Term>
+                            </sml:identifier>
+                            <sml:identifier name="Long Name">
+                                <sml:Term definition="urn:ogc:def:identifier:OGC:longName">
+                                    <sml:value>Piattaforma Acqua Alta - Davis Vantage
+                                        Pro2</sml:value>
+                                </sml:Term>
+                            </sml:identifier>
+                            <sml:identifier name="Manufacturer Name">
+                                <sml:Term definition="urn:ogc:def:identifier:OGC:manufacturerName">
+                                    <sml:value>Davis Instruments</sml:value>
+                                </sml:Term>
+                            </sml:identifier>
+                            <sml:identifier name="Model Number">
+                                <sml:Term definition="urn:ogc:def:identifier:SBE:modelNumber">
+                                    <sml:value>Vantage Pro</sml:value>
+                                </sml:Term>
+                            </sml:identifier>
+
+                        </sml:IdentifierList>
+                    </sml:identification>
+                    <sml:classification>
+                        <sml:ClassifierList>
+                            <sml:classifier name="Intended application">
+                                <sml:Term definition="SDN:P01::WMOCPWXX">
+                                    <sml:codeSpace
+                                        xlink:href="http://vocab.nerc.ac.uk/collection/P01/current/WMOCPWXX/"/>
+                                    <sml:value>Present weather in the atmosphere by visual
+                                        estimation and conversion to WMO code using table
+                                        4677/4501</sml:value>
+                                </sml:Term>
+                            </sml:classifier>
+
+                            <sml:classifier name="Deployment role">
+                                <sml:Term definition="SDN:L19::SDNKG01">
+                                    <sml:codeSpace
+                                        xlink:href="http://vocab.nerc.ac.uk/collection/L19/current/SDNKG01/"/>
+                                    <sml:value>instrument</sml:value>
+                                </sml:Term>
+                            </sml:classifier>
+                        </sml:ClassifierList>
+                    </sml:classification>
+                    <sml:validTime>
+                        <gml:TimePeriod gml:id="DOC_TIME">
+                            <gml:beginPosition>2008-04-01</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="now"/>
+                        </gml:TimePeriod>
+                    </sml:validTime>
+                    <sml:capabilities name="Physical Properties">
+                        <swe:DataRecord definition="urn:ogc:def:property:physicalProperties">
+                            <swe:field name="peso">
+                                <swe:Quantity definition="urn:ogc:def:property:weight">
+                                    <swe:uom code="kg"
+                                        xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/KGXX/"/>
+                                    <swe:value>2.6</swe:value>
+                                </swe:Quantity>
+                            </swe:field>
+                            <swe:field name="material">
+                                <swe:Category definition="urn:ogc:dictionary:OGC:material">
+                                    <swe:value>plastic</swe:value>
+                                </swe:Category>
+                            </swe:field>
+                        </swe:DataRecord>
+                    </sml:capabilities>
+                    <sml:capabilities name="Electrical Requirements">
+                        <swe:DataRecord definition="urn:ogc:def:property:powerRequirement">
+                            <swe:field name="amperaggio">
+                                <swe:Quantity definition="">
+                                    <swe:uom code="mA"
+                                        xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UMAM/"/>
+                                    <swe:value>0.14</swe:value>
+                                </swe:Quantity>
+                            </swe:field>
+                            <swe:field name="voltaggio">
+                                <swe:Quantity definition="">
+                                    <swe:uom code="V"
+                                        xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UVLT/"/>
+                                    <swe:value>5</swe:value>
+                                </swe:Quantity>
+                            </swe:field>
+                        </swe:DataRecord>
+                    </sml:capabilities>
+
+                    <sml:capabilities name="Status Capabilities">
+
+                        <swe:SimpleDataRecord>
+                            <swe:field name="status">
+                                <swe:Boolean>
+                                    <swe:value>true</swe:value>
+                                </swe:Boolean>
+                            </swe:field>
+                        </swe:SimpleDataRecord>
+
+                    </sml:capabilities>
+                    <sml:capabilities name="Status Capabilities">
+
+                        <swe:SimpleDataRecord>
+                            <swe:field name="mobile">
+                                <swe:Boolean>
+                                    <swe:value>false</swe:value>
+                                </swe:Boolean>
+                            </swe:field>
+                        </swe:SimpleDataRecord>
+                    </sml:capabilities>
+                    <sml:capabilities name="Operational Capabilities">
+                        <swe:DataRecord>
+                            <swe:field name="Storage Type"
+                                xlink:role="urn:ogc:def:property:dataStorage">
+                                <swe:Category definition="urn:ogc:def:classifier:SBE:storageType">
+                                    <swe:value>internal memory</swe:value>
+                                </swe:Category>
+                            </swe:field>
+                        </swe:DataRecord>
+                    </sml:capabilities>
+                    <sml:contact
+                        xlink:arcrole="urn:ogc:def:classifiers:OGC:contactType:manufacturer">
+                        <sml:ResponsibleParty>
+                            <sml:organizationName>Davis Instruments</sml:organizationName>
+                            <sml:contactInfo>
+                                <sml:phone>
+                                    <sml:voice>tel:+01-5107329229</sml:voice>
+                                </sml:phone>
+                                <sml:address>
+                                    <sml:deliveryPoint>3465, Diablo Avanue</sml:deliveryPoint>
+                                    <sml:city>Hayward</sml:city>
+                                    <sml:administrativeArea>CA</sml:administrativeArea>
+                                    <sml:postalCode>94545-2778</sml:postalCode>
+                                    <sml:country>USA</sml:country>
+                                    <sml:electronicMailAddress>sales@davisnet.com</sml:electronicMailAddress>
+                                </sml:address>
+                                <sml:onlineResource xlink:href="http://www.davisnet.com"/>
+                            </sml:contactInfo>
+                        </sml:ResponsibleParty>
+                    </sml:contact>
+                    <sml:contact xlink:arcrole="urn:ogc:def:classifiers:OGC:contactType:owner">
+                        <sml:ResponsibleParty>
+                            <sml:organizationName>ISMAR</sml:organizationName>
+                            <sml:contactInfo>
+                                <sml:phone>
+                                    <sml:voice>tel:+39-0412407911</sml:voice>
+                                </sml:phone>
+                                <sml:address>
+                                    <sml:deliveryPoint>Castello 2737/F</sml:deliveryPoint>
+                                    <sml:city>Venezia</sml:city>
+                                    <sml:postalCode>30122</sml:postalCode>
+                                    <sml:country>IT</sml:country>
+                                    <sml:electronicMailAddress>mailto:mauro.bastianini@ismar.cnr.it</sml:electronicMailAddress>
+                                </sml:address>
+                                <sml:onlineResource xlink:href="http://www.ismar.cnr.it/"/>
+                            </sml:contactInfo>
+                        </sml:ResponsibleParty>
+                    </sml:contact>
+                    <sml:contact xlink:arcrole="urn:ogc:def:classifiers:OGC:contactType:operator">
+                        <sml:ResponsibleParty>
+                            <sml:organizationName>ISMAR</sml:organizationName>
+                            <sml:contactInfo>
+                                <sml:phone>
+                                    <sml:voice>tel:+39-0412407911</sml:voice>
+                                </sml:phone>
+                                <sml:address>
+                                    <sml:deliveryPoint>Castello 2737/F</sml:deliveryPoint>
+                                    <sml:city>Venezia</sml:city>
+                                    <sml:postalCode>30122</sml:postalCode>
+                                    <sml:country>IT</sml:country>
+                                    <sml:electronicMailAddress>mailto:mauro.bastianini@ismar.cnr.it</sml:electronicMailAddress>
+                                </sml:address>
+                                <sml:onlineResource xlink:href="http://www.ismar.cnr.it/"/>
+                            </sml:contactInfo>
+                        </sml:ResponsibleParty>
+                    </sml:contact>
+                    <sml:documentation
+                        xlink:arcrole="urn:ogc:def:classifiers:OGC:documentType:datasheet">
+                        <sml:Document>
+                            <gml:description>Datasheet</gml:description>
+                            <sml:date>2013-09-30</sml:date>
+                            <sml:format>application/pdf</sml:format>
+                            <sml:onlineResource
+                                xlink:href="http://www.davisnet.com/product_documents/weather/spec_sheets/6152_62_53_63_SS.pdf"
+                            />
+                        </sml:Document>
+                    </sml:documentation>
+                    <sml:documentation xlink:role="urn:ogc:def:object:OGC:1.0:image">
+                        <sml:Document>
+                            <gml:description>Davis Vantage Pro2 PTF image</gml:description>
+                            <sml:format>image/jpg</sml:format>
+                            <sml:onlineResource xlink:href="http://www.ismar.cnr.it/infrastrutture/piattaforma-acqua-alta/image"/>
+                        </sml:Document>
+                    </sml:documentation>
+                    <sml:history xlink:arcrole="smlUpdates">
+                        <sml:EventList gml:id="smlUpdates">
+                            <sml:member name="SML20141217">
+                                <sml:Event gml:id="SMLUpdate20141217">
+                                    <sml:date>2014-12-17</sml:date>
+                                    <gml:description>Metadata creation</gml:description>
+                                </sml:Event>
+                            </sml:member>
+                        </sml:EventList>
+                    </sml:history>
+                    <sml:spatialReferenceFrame>
+                        <gml:EngineeringCRS gml:id="Davis_Station_Frame">
+                            <gml:srsName>PTF Davis Vantage Pro2 Spatial Frame</gml:srsName>
+                            <gml:usesCS xlink:href="urn:ogc:def:cs:xyzFrame" />
+                            <gml:usesEngineeringDatum>
+                                <gml:EngineeringDatum gml:id="Davis_Station_Datum">
+                                    <gml:datumName>PTF Davis Vantage Pro2 Spatial Datum</gml:datumName>
+                                    <gml:anchorPoint>Origin is at the base of mouting.
+                                        Z is alog the axis of the mouting pole - typically vertical.
+                                        X and Y are ortogonal to Z but undetermined</gml:anchorPoint>
+                                </gml:EngineeringDatum>
+                            </gml:usesEngineeringDatum>
+                        </gml:EngineeringCRS>
+                    </sml:spatialReferenceFrame>
+                    <sml:inputs>
+                        <sml:InputList>
+                            <sml:input name="Temperature of the atmosphere"
+                                xlink:href="http://vocab.nerc.ac.uk/collection/P01/current/CDTBZZ01/">
+                                <swe:ObservableProperty definition="SDN:P01::CDTBZZ01">
+                                    <gml:description>Temperature of the atmosphere</gml:description>
+                                </swe:ObservableProperty>
+                            </sml:input>
+                            <sml:input
+                                name="Relative humidity of the atmosphere by humidity sensor"
+                                xlink:href="http://vocab.nerc.ac.uk/collection/P01/current/CRELZZ01/">
+                                <swe:ObservableProperty definition="SDN:P01::CRELZZ01">
+                                    <gml:description>Relative humidity of the atmosphere by humidity sensor</gml:description>
+                                </swe:ObservableProperty>
+                            </sml:input>
+                            <sml:input name="Air pressure" xlink:href="http://vocab.nerc.ac.uk/collection/P02/current/CAPH/">
+                                <swe:ObservableProperty definition="SDN:P02::CAPH">
+                                    <gml:description>Air pressure</gml:description>
+                                </swe:ObservableProperty>
+                            </sml:input>
+                            <sml:input
+                                name="Wind speed (relative to moving platform) in the atmosphere by in-situ anemometer"
+                                xlink:href="http://vocab.nerc.ac.uk/collection/P01/current/ERWSSS01/">
+                                <swe:ObservableProperty definition="SDN:P01::ERWSSS01">
+                                    <gml:description>Wind speed (relative to moving platform) in the atmosphere by in-situ anemometer</gml:description>
+                                </swe:ObservableProperty>
+                            </sml:input>
+                            <sml:input
+                                name="Wind speed in the atmosphere by in-situ anemometer"
+                                xlink:href="http://vocab.nerc.ac.uk/collection/P01/current/EWSBSS02/">
+                                <swe:ObservableProperty definition="SDN:P01::EWSBSS02">
+                                    <gml:description>Wind direction (relative to moving platform) in the atmosphere by in-situ anemometer</gml:description>
+                                </swe:ObservableProperty>
+                            </sml:input>
+                            <sml:input name="Temperature of the water column"
+                                xlink:href="http://vocab.nerc.ac.uk/collection/P02/current/TEMP/">
+                                <swe:ObservableProperty definition="SDN:P02::TEMP">
+                                    <gml:description>Temperature of the water column</gml:description>
+                                </swe:ObservableProperty>
+                            </sml:input>
+                            <sml:input name="Solar Radiation"
+                                xlink:href="http://vocab.nerc.ac.uk/collection/P02/current/CSLR/">
+                                <swe:ObservableProperty definition="SDN:P02::CSLR">
+                                    <gml:description>Solar Radiation</gml:description>
+                                </swe:ObservableProperty>
+                            </sml:input>
+                            <sml:input
+                                name="Downwelling vector irradiance as energy (ultra-violet A wavelengths) in the atmosphere by cosine-collector radiometer"
+                                xlink:href="http://vocab.nerc.ac.uk/collection/P01/current/UVRDZZ01/">
+                                <swe:ObservableProperty definition="SDN:P01::UVRDZZ01">
+                                    <gml:description>Downwelling vector irradiance as energy (ultra-violet wavelengths) in the atmosphere by radiometer</gml:description>
+                                </swe:ObservableProperty>
+                            </sml:input>
+                            <sml:input
+                                name="Precipitation rate (liquid water equivalent) in the atmosphere by in-situ rain gauge"
+                                xlink:href="http://vocab.nerc.ac.uk/collection/P01/current/CPRRRG01/">
+                                <swe:ObservableProperty definition="SDN:P01::CPRRRG01">
+                                    <gml:description>Precipitation rate (liquid water equivalent) in
+                                        the atmosphere by in-situ rain gauge</gml:description>
+                                </swe:ObservableProperty>
+                            </sml:input>
+                            <sml:input
+                                name="Thickness of precipitation amount (liquid water equivalent) in the atmosphere by in-situ rain gauge"
+                                xlink:href="http://vocab.nerc.ac.uk/collection/P01/current/CPRPRG01/">
+                                <swe:ObservableProperty definition="SDN:P01::CPRPRG01">
+                                    <gml:description>Thickness of precipitation amount (liquid water
+                                        equivalent) in the atmosphere by in-situ rain
+                                        gauge</gml:description>
+                                </swe:ObservableProperty>
+                            </sml:input>
+                        </sml:InputList>
+                    </sml:inputs>
+                    <sml:outputs>
+                        <sml:OutputList>
+                            <sml:output name="phenomenonTime"
+                                xlink:href="http://www.opengis.net/def/property/OGC/0/PhenomenonTime">
+                                <swe:Time definition="http://www.opengis.net/def/property/OGC/0/PhenomenonTime"/>
+                            </sml:output>
+                            <sml:output name="Temperature of the atmosphere by thermometer">
+                                <swe:Quantity
+                                    definition="http://vocab.nerc.ac.uk/collection/P01/current/CDTAZZ01/">
+                                    <gml:description>Temperature of the atmosphere</gml:description>
+                                    <swe:uom code="degC"
+                                        xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UPAA/"/>
+                                    <swe:constraint>
+                                        <swe:AllowedValues>
+                                            <swe:interval>-40 +65</swe:interval>
+                                        </swe:AllowedValues>
+                                    </swe:constraint>
+                                    <swe:quality xlink:role="urn:ogc:def:phenomenon:OGC:accuracy">
+                                        <swe:Quantity
+                                            definition="urn:ogc:def:sensor:OGC:absoluteAccuracy">
+                                            <swe:uom code="degC"
+                                                xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UPAA/"/>
+                                            <swe:value>0.5</swe:value>
+                                        </swe:Quantity>
+                                    </swe:quality>
+                                </swe:Quantity>
+                            </sml:output>
+                            <sml:output
+                                name="Relative humidity of the atmosphere by humidity sensor">
+                                <swe:Quantity definition="http://vocab.nerc.ac.uk/collection/P01/current/CRELZZ01/">
+                                    <gml:description>Relative humidity of the
+                                        atmosphere</gml:description>
+                                    <swe:uom code="%" xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UPCT/"/>
+                                    <swe:constraint>
+                                        <swe:AllowedValues>
+                                            <swe:interval>1 100</swe:interval>
+                                        </swe:AllowedValues>
+                                    </swe:constraint>
+                                    <swe:quality xlink:role="urn:ogc:def:phenomenon:OGC:accuracy">
+                                        <swe:Quantity
+                                            definition="urn:ogc:def:sensor:OGC:absoluteAccuracy">
+                                            <swe:uom code="%"
+                                                xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UPCT/"/>
+                                            <swe:value>3</swe:value>
+                                        </swe:Quantity>
+                                    </swe:quality>
+                                </swe:Quantity>
+                            </sml:output>
+                            <sml:output name="Air pressure">
+                                <swe:Quantity
+                                    definition="http://vocab.nerc.ac.uk/collection/P02/current/CAPH/">
+                                    <gml:description>Air pressure</gml:description>
+                                    <swe:uom code="mBar"
+                                        xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UPBB/"/>
+                                    <swe:constraint>
+                                        <swe:AllowedValues>
+                                            <swe:interval>880 1080</swe:interval>
+                                        </swe:AllowedValues>
+                                    </swe:constraint>
+                                    <swe:quality xlink:role="urn:ogc:def:phenomenon:OGC:accuracy">
+                                        <swe:Quantity
+                                            definition="urn:ogc:def:sensor:OGC:absoluteAccuracy">
+                                            <swe:uom code="mBar"
+                                                xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UPBB/"/>
+                                            <swe:value>1</swe:value>
+                                        </swe:Quantity>
+                                    </swe:quality>
+                                </swe:Quantity>
+                            </sml:output>
+                            <sml:output name="Wind speed in the atmosphere by in-situ anemometer">
+                                <swe:Quantity definition="http://vocab.nerc.ac.uk/collection/P01/current/ERWSSS01/">
+                                    <gml:description>Wind speed in the atmosphere</gml:description>
+                                    <swe:uom code="m/s"
+                                        xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UVAA/"/>
+                                    <swe:constraint>
+                                        <swe:AllowedValues>
+                                            <swe:interval>1 67</swe:interval>
+                                        </swe:AllowedValues>
+                                    </swe:constraint>
+                                    <swe:quality xlink:role="urn:ogc:def:phenomenon:OGC:accuracy">
+                                        <swe:Quantity
+                                            definition="urn:ogc:def:sensor:OGC:absoluteAccuracy">
+                                            <swe:uom code="m/s"
+                                                xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UVAA/"/>
+                                            <swe:value>1</swe:value>
+                                        </swe:Quantity>
+                                    </swe:quality>
+                                </swe:Quantity>
+                            </sml:output>
+                            <sml:output
+                                name="Wind from direction in the atmosphere by in-situ anemometer">
+                                <swe:Quantity
+                                    definition="http://vocab.nerc.ac.uk/collection/P01/current/EWDASS01/">
+                                    <gml:description>Wind direction</gml:description>
+                                    <swe:uom code="deg"
+                                        xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UAAA/"/>
+                                    <swe:constraint>
+                                        <swe:AllowedValues>
+                                            <swe:interval>0 360</swe:interval>
+                                        </swe:AllowedValues>
+                                    </swe:constraint>
+                                    <swe:quality xlink:role="urn:ogc:def:phenomenon:OGC:accuracy">
+                                        <swe:Quantity
+                                            definition="urn:ogc:def:sensor:OGC:absoluteAccuracy">
+                                            <swe:uom code="deg"
+                                                xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UAAA/"/>
+                                            <swe:value>7</swe:value>
+                                        </swe:Quantity>
+                                    </swe:quality>
+                                </swe:Quantity>
+                            </sml:output>
+                            <sml:output name="Temperature of the water column">
+                                <swe:Quantity
+                                    definition="http://vocab.nerc.ac.uk/collection/P02/current/TEMP/">
+                                    <gml:description>Temperature of the water</gml:description>
+                                    <swe:uom code="degC"
+                                        xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UPAA/"/>
+                                    <swe:constraint>
+                                        <swe:AllowedValues>
+                                            <swe:interval>-40 +65</swe:interval>
+                                        </swe:AllowedValues>
+                                    </swe:constraint>
+                                    <swe:quality xlink:role="urn:ogc:def:phenomenon:OGC:accuracy">
+                                        <swe:Quantity
+                                            definition="urn:ogc:def:sensor:OGC:absoluteAccuracy">
+                                            <swe:uom code="degC"
+                                                xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UPAA/"/>
+                                            <swe:value>0.5</swe:value>
+                                        </swe:Quantity>
+                                    </swe:quality>
+                                </swe:Quantity>
+                            </sml:output>
+                            <sml:output name="Solar Radiation">
+                                <swe:Quantity
+                                    definition="http://vocab.nerc.ac.uk/collection/P02/current/CSLR/">
+                                    <gml:description>Solar radiation</gml:description>
+                                    <swe:uom code="W/m^2"
+                                        xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UFAA/"/>
+                                    <swe:constraint>
+                                        <swe:AllowedValues>
+                                            <swe:interval>0 1800</swe:interval>
+                                        </swe:AllowedValues>
+                                    </swe:constraint>
+                                    <swe:quality xlink:role="urn:ogc:def:phenomenon:OGC:accuracy">
+                                        <swe:Quantity
+                                            definition="urn:ogc:def:sensor:OGC:absoluteAccuracy">
+                                            <swe:uom code="%"
+                                                xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UPCT/"/>
+                                            <swe:value>5</swe:value>
+                                        </swe:Quantity>
+                                    </swe:quality>
+                                </swe:Quantity>
+                            </sml:output>
+                            <sml:output
+                                name="Downwelling vector irradiance as energy (ultra-violet wavelengths) in the atmosphere by radiometer">
+                                <swe:Quantity
+                                    definition="http://vocab.nerc.ac.uk/collection/P01/current/UVRDZZ01/">
+                                    <gml:description>Downwelling vector irradiance as energy
+                                        (ultra-violet wavelengths) in the atmosphere by
+                                        radiometer</gml:description>
+                                    <swe:uom code="MED"
+                                        xlink:href="http://medical-dictionary.thefreedictionary.com/Minimum+erythema+dose"/>
+                                    <swe:constraint>
+                                        <swe:AllowedValues>
+                                            <swe:interval>0 199</swe:interval>
+                                        </swe:AllowedValues>
+                                    </swe:constraint>
+                                    <swe:quality xlink:role="urn:ogc:def:phenomenon:OGC:accuracy">
+                                        <swe:Quantity
+                                            definition="urn:ogc:def:sensor:OGC:absoluteAccuracy">
+                                            <swe:uom code="%"
+                                                xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UPCT/"/>
+                                            <swe:value>5</swe:value>
+                                        </swe:Quantity>
+                                    </swe:quality>
+                                </swe:Quantity>
+                            </sml:output>
+                            <sml:output
+                                name="Precipitation rate (liquid water equivalent) in the atmosphere by in-situ rain gauge">
+                                <swe:Quantity definition="">
+                                    <gml:description>Precipitation rate (liquid water equivalent) in
+                                        the atmosphere by in-situ rain gauge</gml:description>
+                                    <swe:uom code="mm"
+                                        xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UXMM/"/>
+                                    <swe:constraint>
+                                        <swe:AllowedValues>
+                                            <swe:interval>0 19999</swe:interval>
+                                        </swe:AllowedValues>
+                                    </swe:constraint>
+                                    <swe:quality xlink:role="urn:ogc:def:phenomenon:OGC:accuracy">
+                                        <swe:Quantity
+                                            definition="urn:ogc:def:sensor:OGC:absoluteAccuracy">
+                                            <swe:uom code="%"
+                                                xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UPCT/"/>
+                                            <swe:value>4</swe:value>
+                                        </swe:Quantity>
+                                    </swe:quality>
+                                </swe:Quantity>
+                            </sml:output>
+                            <sml:output
+                                name="Thickness of precipitation amount (liquid water equivalent) in the atmosphere by in-situ rain gauge">
+                                <swe:Quantity
+                                    definition="http://vocab.nerc.ac.uk/collection/P01/current/CPRPRG01/">
+                                    <gml:description>Thickness of precipitation amount (liquid water
+                                        equivalent) in the atmosphere by in-situ rain
+                                        gauge</gml:description>
+                                    <swe:uom code="mm/h"
+                                        xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/MMPH/"/>
+                                    <swe:constraint>
+                                        <swe:AllowedValues>
+                                            <swe:interval>0 1999.9</swe:interval>
+                                        </swe:AllowedValues>
+                                    </swe:constraint>
+                                    <swe:quality xlink:role="urn:ogc:def:phenomenon:OGC:accuracy">
+                                        <swe:Quantity
+                                            definition="urn:ogc:def:sensor:OGC:absoluteAccuracy">
+                                            <swe:uom code="%"
+                                                xlink:href="http://vocab.nerc.ac.uk/collection/P06/current/UPCT/"/>
+                                            <swe:value>5</swe:value>
+                                        </swe:Quantity>
+                                    </swe:quality>
+                                </swe:Quantity>
+                            </sml:output>
+                        </sml:OutputList>
+                    </sml:outputs>
+                    <sml:positions>
+                        <sml:PositionList>
+                            <!--=================================-->
+                            <!-- Position of Station in EPSG4326 -->
+                            <!--=================================-->
+                            <sml:position name="stationPosition">
+                                <swe:Position localFrame="#Davis_Station_Frame" referenceFrame="http://www.opengis.net/def/crs/EPSG/0/4326">
+                                    <swe:location>
+                                        <swe:Vector definition="urn:ogc:def:phenomenon:location">
+                                            <swe:coordinate name="latitude">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:latitude">
+                                                    <swe:uom code="deg"/>
+                                                    <swe:value>45.3138</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="longitude">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:longitude">
+                                                    <swe:uom code="deg"/>
+                                                    <swe:value>12.5088</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="altitude">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:altitude">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>12</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                        </swe:Vector>
+                                    </swe:location>
+                                    <swe:orientation>
+                                        <swe:Vector definition="urn:ogc:def:phenomenon:orientation">
+                                            <swe:coordinate name="trueHeading">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:angleToNorth" axisID="Z">
+                                                    <swe:uom code="deg"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                        </swe:Vector>
+                                    </swe:orientation>
+                                </swe:Position>
+                            </sml:position>
+                            <!--============================================-->
+                            <!-- Position of Themometer in Station Ref Frame -->
+                            <!--============================================-->
+                            <sml:position name="ThermometerPosition">
+                                <swe:Position referenceFrame="#Davis_Station_Frame">
+                                    <swe:location>
+                                        <swe:Vector>
+                                            <swe:coordinate name="x">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="X">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="y">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Y">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="z">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Z">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>4.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                        </swe:Vector>
+                                    </swe:location>
+                                </swe:Position>
+                            </sml:position>
+                            <!--============================================-->
+                            <!-- Position of Hygrometer in Station Ref Frame -->
+                            <!--============================================-->
+                            <sml:position name="HygrometerPosition">
+                                <swe:Position referenceFrame="#Davis_Station_Frame">
+                                    <swe:location>
+                                        <swe:Vector>
+                                            <swe:coordinate name="x">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="X">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="y">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Y">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="z">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Z">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>4.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                        </swe:Vector>
+                                    </swe:location>
+                                </swe:Position>
+                            </sml:position>
+                            <!--============================================-->
+                            <!-- Position of Rain Gauge in Station Ref Frame -->
+                            <!--============================================-->
+                            <sml:position name="RainGaugePosition">
+                                <swe:Position referenceFrame="#Davis_Station_Frame">
+                                    <swe:location>
+                                        <swe:Vector>
+                                            <swe:coordinate name="x">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="X">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="y">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Y">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="z">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Z">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>4.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                        </swe:Vector>
+                                    </swe:location>
+                                </swe:Position>
+                            </sml:position>
+                            <!--============================================-->
+                            <!-- Position of Barometer in Station Ref Frame -->
+                            <!--============================================-->
+                            <sml:position name="BarometerPosition">
+                                <swe:Position referenceFrame="#Davis_Station_Frame">
+                                    <swe:location>
+                                        <swe:Vector>
+                                            <swe:coordinate name="x">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="X">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="y">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Y">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="z">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Z">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                        </swe:Vector>
+                                    </swe:location>
+                                </swe:Position>
+                            </sml:position>
+                            <!--============================================-->
+                            <!-- Position of Anemometer in Station Ref Frame -->
+                            <!--============================================-->
+                            <sml:position name="AnemometerPosition">
+                                <swe:Position referenceFrame="#Davis_Station_Frame">
+                                    <swe:location>
+                                        <swe:Vector>
+                                            <swe:coordinate name="x">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="X">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="y">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Y">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="z">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Z">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>7.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                        </swe:Vector>
+                                    </swe:location>
+                                </swe:Position>
+                            </sml:position>
+                            <!--============================================-->
+                            <!-- Position of Water Termometer in Station Ref Frame -->
+                            <!--============================================-->
+                            <sml:position name="WaterTermometerPosition">
+                                <swe:Position referenceFrame="#Davis_Station_Frame">
+                                    <swe:location>
+                                        <swe:Vector>
+                                            <swe:coordinate name="x">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="X">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="y">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Y">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="z">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Z">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>-15.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                        </swe:Vector>
+                                    </swe:location>
+                                </swe:Position>
+                            </sml:position>
+                            <!--============================================-->
+                            <!-- Position of Radiation Sensor in Station Ref Frame -->
+                            <!--============================================-->
+                            <sml:position name="RadiationSensorPosition">
+                                <swe:Position referenceFrame="#Davis_Station_Frame">
+                                    <swe:location>
+                                        <swe:Vector>
+                                            <swe:coordinate name="x">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="X">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="y">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Y">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="z">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Z">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>4.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                        </swe:Vector>
+                                    </swe:location>
+                                </swe:Position>
+                            </sml:position>
+                            <!--============================================-->
+                            <!-- Position of UV Sensor in Station Ref Frame -->
+                            <!--============================================-->
+                            <sml:position name="UVSensorPosition">
+                                <swe:Position referenceFrame="#Davis_Station_Frame">
+                                    <swe:location>
+                                        <swe:Vector>
+                                            <swe:coordinate name="x">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="X">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="y">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Y">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>0.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                            <swe:coordinate name="z">
+                                                <swe:Quantity definition="urn:ogc:def:phenomenon:distance" axisID="Z">
+                                                    <swe:uom code="m"/>
+                                                    <swe:value>4.0</swe:value>
+                                                </swe:Quantity>
+                                            </swe:coordinate>
+                                        </swe:Vector>
+                                    </swe:location>
+                                </swe:Position>
+                            </sml:position>
+                        </sml:PositionList>
+                    </sml:positions>
+                </sml:System>
+            </sml:member>
+        </sml:SensorML>
+    </swes:procedureDescription>
+    <swes:observableProperty>http://vocab.nerc.ac.uk/collection/P01/current/CDTAZZ01/</swes:observableProperty>
+    <swes:observableProperty>http://vocab.nerc.ac.uk/collection/P02/current/CAPH/</swes:observableProperty>
+    <swes:observableProperty>http://vocab.nerc.ac.uk/collection/P01/current/EWDASS01/</swes:observableProperty>
+    <swes:observableProperty>http://vocab.nerc.ac.uk/collection/P02/current/TEMP/</swes:observableProperty>
+    <swes:observableProperty>http://vocab.nerc.ac.uk/collection/P02/current/CSLR/</swes:observableProperty>
+    <swes:observableProperty>http://vocab.nerc.ac.uk/collection/P01/current/UVRDZZ01/</swes:observableProperty>
+    <swes:observableProperty>http://vocab.nerc.ac.uk/collection/P01/current/CPRPRG01/</swes:observableProperty>
+    <swes:observableProperty>http://sp7.irea.cnr.it/sensors/vesk.ve.ismar.cnr.it/procedure/DavisInstruments/VantagePro/noSerialNumberDeclared/20141217115413720_11525/observedProperty/compound</swes:observableProperty>
+    <swes:metadata>
+        <sos:SosInsertionMetadata>
+            <sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</sos:observationType>
+            <sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CategoryObservation</sos:observationType>
+            <sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CountObservation</sos:observationType>
+            <sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_TextObservation</sos:observationType>
+            <sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_TruthObservation</sos:observationType>
+            <sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_GeometryObservation</sos:observationType>
+            <sos:observationType>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_SWEArrayObservation</sos:observationType>
+            <sos:featureOfInterestType>http://www.opengis.net/def/samplingFeatureType/OGC-OM/2.0/SF_SamplingPoint</sos:featureOfInterestType>
+        </sos:SosInsertionMetadata>
+    </swes:metadata>
+</swes:InsertSensor>
